@@ -9,12 +9,50 @@
   font-weight: 700;
 }
 
-.header {
-  background-color: #202020;
-  width: 100%;
-  padding-top: 15px;
-  flex-direction: column;
+.main {
+  background-image: url("../../public/bg_gradient.png");
 }
+
+/* Header code */
+
+.header {
+  background-image: url("../../public/ribbon.png"); /* Ribbon background */
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: #CCC1AE; /* Background color for the ribbon */
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+.ribbonContent {
+  display: flex;
+  align-items: center; /* Vertically align all items */
+  justify-content: space-between; /* Distribute text on either side of the image */
+  max-width: 1200px; /* Constrain content width */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.leftText,
+.rightText {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold;
+  color: black; /* Text color */
+  flex-shrink: 0; /* Prevent text from shrinking */
+  width: 10rem;
+  text-align: right;    
+}
+
+.centerImage {
+  position: relative; /* Inline position within layout */
+  width: 150px; /* Adjust size of the face image */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it appears above the ribbon */
+}
+  
+
+/* Common elements */
 
 .nav {
   background-color: #303030;
@@ -50,6 +88,7 @@
 .description h2 {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #333E51;
   margin: 0.5rem;
 }
 

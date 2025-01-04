@@ -24,6 +24,15 @@ function SideLink({text, href}){
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.header}>
+        <div className={styles.ribbonContent}>
+          <span className={styles.leftText}>Sam</span>
+          <img src="./顔.png" alt="Sam's face" className={styles.centerImage} />
+          <span className={styles.rightText}>Shakeshaft</span>
+        </div>
+      </div>
+
+      {/*
       <div className={[styles.center, styles.header].join(' ')}>
         <h1 className={styles.title}>
           Sam Shakeshaft
@@ -35,6 +44,8 @@ export default function Home() {
           Please note: This page is currently under heavy construction until 5th January 2025
         </h4>
       </div>
+      */}
+      
       <div className={styles.nav}>
         {/*
         <a href="#about">About</a>

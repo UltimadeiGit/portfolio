@@ -4,7 +4,7 @@ import Common from './common';
 export default function HexiiProjectComponent() {
     return (<div>
         
-        <div className={styles.center} id="Hexii"><Common.Icon src="./icon_Hexii.png" alt="Hexii Icon" width="256" height="256" /></div>
+        <div className={styles.center} id="Hexii"><Common.Icon src="./icon_Hexii.png" alt="Hexii Icon" width="604" height="358" /></div>
         
         <h2>About</h2>
         <div className={styles.callout_backdrop}>
@@ -30,7 +30,7 @@ export default function HexiiProjectComponent() {
         <h2>Links</h2>
         <div className={styles.callout_backdrop}>
             <Common.SideLink text=" ~ Play Hexii [Requires download] ~ " href="https://ultimadei.itch.io/hexii"/>
-            <Common.SideLink text=" ~ Review Code ~ " href="https://github.com/UltimadeiGit/Hexii"/>
+            {/* <Common.SideLink text=" ~ Review Code ~ " href="https://github.com/UltimadeiGit/Hexii"/> */}
         </div>
         
         <hr />
